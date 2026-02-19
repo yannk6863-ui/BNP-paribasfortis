@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#0FA958"/>
+  <title>Espace Client — Comptes</title>
+  <link rel="stylesheet" href="../assets/css/styles.css"/>
+</head>
+<body data-active="accounts" data-protect="true">
+<header>
+  <div class="container nav">
+    <a class="brand" href="./dashboard.html"><img src="../images.jpg" alt="Logo BNP PARIBAS FORTIS"><span class="brand-text">BNP PARIBAS</span></a>
+    <div class="nav-actions">
+      <span class="badge">Connexion sécurisée</span>
+      <button class="btn btn-ghost" data-help>Assistance</button>
+      <button class="btn" data-logout>Déconnexion</button>
+    </div>
+  </div>
+</header>
+
+
+<main class="portal">
+  <div class="container portal-grid">
+    <aside class="sidebar">
+      <div class="who">
+        <div class="avatar" data-avatar>?</div>
+        <div><div style="font-weight:950" data-user-name>Client</div><div class="small" data-user-meta>—</div></div>
+      </div>
+      <div class="side">
+        <a href="./dashboard.html" data-key="dashboard">Tableau de bord <span class="chip">🏠</span></a>
+        <a href="./accounts.html" data-key="accounts">Comptes <span class="chip">💼</span></a>
+        <a href="./transfers.html" data-key="transfers">Virements <span class="chip">↗</span></a>
+        <a href="./cards.html" data-key="cards">Cartes <span class="chip">💳</span></a>
+        <a href="./transactions.html" data-key="transactions">Opérations <span class="chip">🧾</span></a>
+        <a href="./profile.html" data-key="profile">Profil <span class="chip">⚙</span></a>
+      </div>
+    </aside>
+
+    <section>
+      <div class="topbar">
+        <div>
+          <h2>Mes comptes</h2>
+          <p class="small">Soldes, IBAN, détails.</p>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn btn-primary" href="./transfers.html">Faire un virement</a>
+        </div>
+      </div>
+
+      <div class="grid" data-accounts></div>
+    </section>
+  </div>
+</main>
+
+
+<footer class="section" style="padding:22px 0; border-top:1px solid var(--border); background:#fff">
+  <div class="container small" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+    <div>© 2025 BNP PARIBAS FORTIS — Espace client</div>
+    <div>Mentions & sécurité • Données fictives</div>
+  </div>
+  <script src="../assets/js/app.js"></script>
+</footer>
+
+<div class="modal-backdrop" data-modal-backdrop>
+  <div class="modal">
+    <h3 data-modal-title>Message</h3>
+    <div class="small" data-modal-body>...</div>
+    <div class="actions">
+      <button class="btn" data-modal-close>Fermer</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

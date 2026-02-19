@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#0FA958"/>
+  <title>Connexion — Espace Client</title>
+  <link rel="stylesheet" href="./assets/css/styles.css"/>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#"><img src="./images.jpg" alt="Logo BNP PARIBAS FORTIS"><span class="brand-text">BNP PARIBAS FORTIS</span></a>
+    <div class="nav-actions">
+      <span class="badge">Accès client</span>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container" style="max-width: 520px">
+    <div class="brand" style="justify-content:center; margin-bottom:12px">
+      <img src="./images.jpg" alt="Logo BNP PARIBAS FORTIS">
+      <span class="brand-text">BNP PARIBAS FORTIS</span>
+    </div>
+    <h1>Connexion</h1>
+    <p>Entrez votre identifiant et votre mot de passe pour accéder à votre espace client.</p>
+
+    <div class="panel">
+      <form class="form" data-login-form>
+        <div class="alert hidden" data-alert></div>
+
+        <div class="field">
+          <label>Identifiant</label>
+          <input name="username" autocomplete="username">
+        </div>
+
+        <div class="field">
+          <label>Mot de passe</label>
+          <input name="password" type="password" placeholder="••••••••" autocomplete="current-password">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Se connecter</button>
+      </form>
+    </div>
+
+    <div class="split" style="margin-top:14px">
+      <div class="card">
+        <div class="icon">🔒</div>
+        <h3>Protection</h3>
+        <p class="small">Session sécurisée, interface protégée, conseils anti-phishing.</p>
+      </div>
+      <div class="card">
+        <div class="icon">☎</div>
+        <h3>Besoin d’aide ?</h3>
+        <p class="small">Accédez à l’assistance depuis l’espace client.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="section" style="padding:22px 0; border-top:1px solid var(--border); background:#fff">
+  <div class="container small" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+    <div>©  BNP PARIBAS FORTIS</div>
+    <div>Confidentialité • Conditions • Cookies</div>
+  </div>
+  <script src="./assets/js/app.js"></script>
+</footer>
+</body>
+</html>

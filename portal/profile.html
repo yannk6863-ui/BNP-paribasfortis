@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#0FA958"/>
+  <title>Espace Client — Profil</title>
+  <link rel="stylesheet" href="../assets/css/styles.css"/>
+</head>
+<body data-active="profile" data-protect="true">
+<header>
+  <div class="container nav">
+    <a class="brand" href="./dashboard.html"><img src="../images.jpg" alt="Logo BNP PARIBAS FORTIS"><span class="brand-text">BNP PARIBAS</span></a>
+    <div class="nav-actions">
+      <span class="badge">Connexion sécurisée</span>
+      <button class="btn btn-ghost" data-help>Assistance</button>
+      <button class="btn" data-logout>Déconnexion</button>
+    </div>
+  </div>
+</header>
+
+
+<main class="portal">
+  <div class="container portal-grid">
+    <aside class="sidebar">
+      <div class="who">
+        <div class="avatar" data-avatar>?</div>
+        <div><div style="font-weight:950" data-user-name>Client</div><div class="small" data-user-meta>—</div></div>
+      </div>
+      <div class="side">
+        <a href="./dashboard.html" data-key="dashboard">Tableau de bord <span class="chip">🏠</span></a>
+        <a href="./accounts.html" data-key="accounts">Comptes <span class="chip">💼</span></a>
+        <a href="./transfers.html" data-key="transfers">Virements <span class="chip">↗</span></a>
+        <a href="./cards.html" data-key="cards">Cartes <span class="chip">💳</span></a>
+        <a href="./transactions.html" data-key="transactions">Opérations <span class="chip">🧾</span></a>
+        <a href="./profile.html" data-key="profile">Profil <span class="chip">⚙</span></a>
+      </div>
+    </aside>
+
+    <section>
+      <div class="topbar">
+        <div>
+          <h2>Profil</h2>
+          <p class="small">Informations personnelles — enregistrées localement.</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <div class="panel">
+          <h3>Mes informations</h3>
+          <form class="form" data-profile-form>
+            <div class="alert hidden" data-profile-alert></div>
+            <div class="field"><label>Nom complet</label><input name="fullName" required></div>
+            <div class="field"><label>Email</label><input name="email" required></div>
+            <div class="field"><label>Téléphone</label><input name="phone" required></div>
+            <div class="field"><label>Ville</label><input name="city" required></div>
+            <button class="btn btn-primary" type="submit">Enregistrer</button>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h3>Sécurité</h3>
+          <div class="grid">
+            <div class="card">
+              <div class="icon">🔑</div>
+              <h3>Mot de passe</h3>
+              <div class="small">Affiche un message.</div>
+              <button class="btn" data-action="password">Modifier</button>
+            </div>
+            <div class="card">
+              <div class="icon">📱</div>
+              <h3>Validation</h3>
+              <div class="small">MFA/OTP en production.</div>
+              <button class="btn" data-action="mfa">Activer 2FA</button>
+            </div>
+          </div>
+
+          <div class="notice" style="margin-top:12px">
+            <b>Reset</b> : réinitialiser toutes les données.
+            <div style="margin-top:10px"><button class="btn" data-reset>Réinitialiser les données</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+
+<footer class="section" style="padding:22px 0; border-top:1px solid var(--border); background:#fff">
+  <div class="container small" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+    <div>© 2025 BNP PARIBAS FORTIS — Espace client</div>
+    <div>Mentions & sécurité • Données fictives</div>
+  </div>
+  <script src="../assets/js/app.js"></script>
+</footer>
+
+<div class="modal-backdrop" data-modal-backdrop>
+  <div class="modal">
+    <h3 data-modal-title>Message</h3>
+    <div class="small" data-modal-body>...</div>
+    <div class="actions">
+      <button class="btn" data-modal-close>Fermer</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

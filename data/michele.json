@@ -1,0 +1,108 @@
+{
+  "bank": {
+    "name": "BNP PARIBAS FORTIS",
+    "currency": "EUR"
+  },
+  "user": {
+    "id": "u_michele",
+    "username": "michele",
+    "password": "Viggiano@2025",
+    "fullName": "MICHELE VIGGIANO",
+    "email": "michele.viggiano@BNP PARIBAS FORTIS.example",
+    "phone": "",
+    "city": "Bruxelles",
+    "accounts": [
+      {
+        "id": "a1",
+        "type": "Compte courant",
+        "number": "IT-001-4587-2201",
+        "balance": 468000.0,
+        "iban": "IT60X0542811101000000123456"
+      },
+      {
+        "id": "a2",
+        "type": "Épargne",
+        "number": "IT-002-1109-8871",
+        "balance": 8200.0,
+        "goal": "Projet maison",
+        "target": 20000.0
+      }
+    ],
+    "cards": [
+      {
+        "id": "c1",
+        "label": "Visa Premium",
+        "masked": "**** 4021",
+        "status": "Bloquée",
+        "payLimit": 2500.0,
+        "atmLimit": 800.0
+      },
+      {
+        "id": "c2",
+        "label": "Mastercard Virtual",
+        "masked": "**** 9188",
+        "status": "Bloquée",
+        "payLimit": 1200.0,
+        "atmLimit": 0.0
+      }
+    ],
+    "beneficiaries": [
+      {
+        "id": "b1",
+        "name": "Luca Bianchi",
+        "iban": "IT12X0300203280000400000000"
+      },
+      {
+        "id": "b2",
+        "name": "Fournisseur — Internet",
+        "iban": "IT94X0760103200000001234567"
+      }
+    ],
+    "transactions": [
+      {
+        "id": "t1",
+        "date": "2025-04-15",
+        "label": "Paiement — Supermarché",
+        "amount": -85.0,
+        "status": "Terminé"
+      },
+      {
+        "id": "t2",
+        "date": "2025-04-07",
+        "label": "Salaire",
+        "amount": 1200.0,
+        "status": "Terminé"
+      },
+      {
+        "id": "t3",
+        "date": "2025-03-24",
+        "label": "Abonnement Internet",
+        "amount": -45.0,
+        "status": "Terminé"
+      },
+      {
+        "id": "t4",
+        "date": "2025-03-17",
+        "label": "Restaurant",
+        "amount": -62.3,
+        "status": "Terminé"
+      },
+      {
+        "id": "t5",
+        "date": "2025-03-12",
+        "label": "Virement entrant — Luca Bianchi",
+        "amount": 250.0,
+        "status": "Terminé"
+      }
+    ],
+    "savings": [
+      {
+        "id": "s1",
+        "label": "Projet maison",
+        "current": 8200.0,
+        "target": 20000.0,
+        "monthly": 300.0
+      }
+    ]
+  }
+}

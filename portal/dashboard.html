@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="theme-color" content="#0FA958"/>
+  <title>Espace de compte bloqué — Dashboard</title>
+  <link rel="stylesheet" href="../assets/css/styles.css"/>
+</head>
+<body data-active="dashboard" data-protect="true">
+<header>
+  <div class="container nav">
+    <a class="brand" href="./dashboard.html"><img src="../images.jpg" alt="Logo BNP PARIBAS FORTIS"><span class="brand-text">BNP PARIBAS</span></a>
+    <div class="nav-actions">
+      <span class="badge">Connexion sécurisée</span>
+      <button class="btn btn-ghost" data-help>Assistance</button>
+      <button class="btn" data-logout>Déconnexion</button>
+    </div>
+  </div>
+</header>
+
+
+<main class="portal">
+  <div class="container portal-grid">
+    <aside class="sidebar">
+      <div class="who">
+        <div class="avatar" data-avatar>?</div>
+        <div>
+          <div style="font-weight:950" data-user-name>Client</div>
+          <div class="small" data-user-meta>—</div>
+        </div>
+      </div>
+
+      <div class="side" aria-label="Menu">
+        <a href="./dashboard.html" data-key="dashboard">Tableau de bord <span class="chip">🏠</span></a>
+        <a href="./accounts.html" data-key="accounts">Comptes <span class="chip">💼</span></a>
+        <a href="./transfers.html" data-key="transfers">Virements <span class="chip">↗</span></a>
+        <a href="./cards.html" data-key="cards">Cartes <span class="chip">💳</span></a>
+        <a href="./transactions.html" data-key="transactions">Opérations <span class="chip">🧾</span></a>
+        <a href="./profile.html" data-key="profile">Profil <span class="chip">⚙</span></a>
+      </div>
+
+    </aside>
+
+    <section>
+      <div class="topbar">
+        <div>
+          <h2>Compte BNP PARIBAS FORTIS — <span data-user-firstname>Client</span></h2>
+          <p class="small">Compte bloqué: accès limité et informations de régularisation.</p>
+        </div>
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn" href="./transfers.html">Nouveau virement</a>
+          <a class="btn btn-primary" href="./accounts.html">Voir comptes</a>
+        </div>
+      </div>
+
+      <div class="alert bad" style="margin-bottom:12px; padding:18px; border-width:2px; display:flex; align-items:flex-start; gap:12px">
+        <div style="font-size:28px; line-height:1">⚠️</div>
+        <div style="font-size:22px; line-height:1.35; font-weight:950">
+          Votre compte est bloqué suite à la perte de votre carte. Les frais de déblocage de votre compte s’élèvent à 37 000 €.
+        </div>
+      </div>
+
+      <div class="stat-grid" data-stats></div>
+
+      <div class="split" style="margin-top:12px">
+        <div class="panel">
+          <h3>Dernières opérations</h3>
+          <table class="table" aria-label="Dernières opérations">
+            <thead><tr><th>Date</th><th>Libellé</th><th>Montant</th><th>Statut</th></tr></thead>
+            <tbody data-last-tx></tbody>
+          </table>
+        </div>
+
+        <div class="panel">
+          <h3>Épargne</h3>
+          <div data-savings-summary></div>
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap">
+            <button class="btn btn-primary" data-savings-deposit>Ajouter un versement</button>
+            <button class="btn" data-savings-withdraw>Retirer</button>
+          </div>
+          <div class="small" style="margin-top:10px">Les mouvements épargne sont simulés.</div>
+        </div>
+      </div>
+
+      <div class="split" style="margin-top:12px">
+        <div class="panel">
+          <h3>Cartes</h3>
+          <div class="grid" data-cards-mini></div>
+          <div style="margin-top:12px">
+            <a class="btn" href="./cards.html">Gérer mes cartes</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Actions rapides</h3>
+          <div class="grid">
+            <div class="card">
+              <div class="icon">🔔</div>
+              <h3>Alertes</h3>
+              <div class="small">Activez des notifications de paiement et virement.</div>
+              <button class="btn" data-action="alerts">Activer</button>
+            </div>
+            <div class="card">
+              <div class="icon">🧾</div>
+              <h3>Relevés</h3>
+              <div class="small">Export PDF/CSV.</div>
+              <button class="btn" data-action="export">Exporter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
+
+
+<footer class="section" style="padding:22px 0; border-top:1px solid var(--border); background:#fff">
+  <div class="container small" style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+    <div>© 2025 BNP PARIBAS FORTIS — Espace de compte bloqué</div>
+    <div>Mentions & sécurité • Données fictives</div>
+  </div>
+  <script src="../assets/js/app.js"></script>
+</footer>
+
+<div class="modal-backdrop" data-modal-backdrop>
+  <div class="modal">
+    <h3 data-modal-title>Message</h3>
+    <div class="small" data-modal-body>...</div>
+    <div class="actions">
+      <button class="btn" data-modal-close>Fermer</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="48" viewBox="0 0 210 48" role="img" aria-label="Logo BNP PARIBAS FORTIS">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0FA958"/>
+      <stop offset="1" stop-color="#0C8D49"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="8" width="34" height="34" rx="10" fill="url(#g)"/>
+  <path d="M10 25c0-6 4-10 10-10 3.1 0 5.8 1 7.6 2.9l-3.2 3.2c-1.1-1.1-2.6-1.7-4.4-1.7-3.4 0-5.9 2.5-5.9 5.6 0 3.3 2.5 5.6 5.9 5.6 1.8 0 3.3-.6 4.4-1.7l3.2 3.2c-1.8 1.9-4.5 2.9-7.6 2.9-6 0-10-4-10-9.9z" fill="#fff" opacity="0.95"/>
+  <text x="46" y="29" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="20" font-weight="900" fill="#0B1220">BNP PARIBAS FORTIS</text>
+  <text x="46" y="42" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="11" font-weight="800" fill="#0FA958">Espace client sécurisé</text>
+</svg>
